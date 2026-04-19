@@ -11,6 +11,10 @@ if cost_of_item < 0 or money_from_user < 0:
 
 # 3. Calculate the total change and print
 change = money_from_user - cost_of_item 
+if change < 0:
+    sys.exit("The amount you gave is too lillte")
+
+
 
 # 4. Find the correct bills/coins to give for change TODO
 
