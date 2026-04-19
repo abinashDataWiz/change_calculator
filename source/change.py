@@ -1,6 +1,8 @@
 
 
 # 1. Get inputs from user TODO
+cost_of_item = float(input("What is the total cost: "))
+money_from_user = float(input("Give the exact amount or more for this cost: "))
 
 
 # 2. Check if they make sense TODO
