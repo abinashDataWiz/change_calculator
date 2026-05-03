@@ -16,17 +16,22 @@ if change < 0:
 
 
 
-# 4. Find the correct bills/coins to give for change TODO
+# 4. Find the correct bills/coins to give for change 
 
 # 4.1 Figure out correct bills
 bills = [100, 50, 20, 10, 5]
-# TODO 
+for bill in bills:
+    if bill < change:
+        bill_amount = int(change/bill)
+        change = change - bill_amount * bill
+        print("You need " + str(bill_amount) + " " + str(bill) + " dollar bills")
+    
 
 # 4.2 Figure out correct coins
 coins = [2.00, 1.00, 0.25, 0.10, 0.05, 0.01]
-# TODO
 for coin in coins:
     if coin <= change:
         coin_amount = int(change/coin)
         change = change - coin_amount * coin
+        print(change)
         print("You need " + str(coin_amount) + " " + str(coin) + " coins.")
