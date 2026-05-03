@@ -23,5 +23,10 @@ bills = [100, 50, 20, 10, 5]
 # TODO 
 
 # 4.2 Figure out correct coins
-coins = [2, 1, 0.25, 0.10, 0.05, 0.01]
+coins = [2.00, 1.00, 0.25, 0.10, 0.05, 0.01]
 # TODO
+for coin in coins:
+    if coin <= change:
+        coin_amount = int(change/coin)
+        change = change - coin_amount * coin
+        print("You need " + str(coin_amount) + " " + str(coin) + " coins.")
