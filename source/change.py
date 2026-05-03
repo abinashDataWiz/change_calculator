@@ -18,5 +18,10 @@ if change < 0:
 
 # 4. Find the correct bills/coins to give for change TODO
 
+# 4.1 Figure out correct bills
+bills = [100, 50, 20, 10, 5]
+# TODO 
 
-# 5. Print it out in a nice format TODO
+# 4.2 Figure out correct coins
+coins = [2, 1, 0.25, 0.10, 0.05, 0.01]
+# TODO
